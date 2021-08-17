@@ -24,7 +24,7 @@
 
  <div class="field">
    <div><%= f.label :title, 'Body' %></div>
-   <%= f.text_area :body %>
+   <div><%= f.text_area :body %></div>
  </div>
  
   
@@ -36,6 +36,6 @@
 
 
 <%= link_to "Show",book_path(@book.id) %> | 
-<a href="/books">Back</a>
+<%= link_to "Back",books_path %> 
 
 
